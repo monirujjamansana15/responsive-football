@@ -103,6 +103,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
  .container{
     width: 1050px;
@@ -140,3 +141,54 @@ main{
      width: 300px;
      height: 256px;
  }
+
+/* -----------------------
+      LOWER-MIDDLE_STYLE
+   ---------------------- */
+   
+.live-match{
+    display: flex;
+}
+.live-match-info{
+    margin-top: 224px;
+    margin-left: 156px;
+    padding-right: 33px;
+}
+.live-match-info .live-match-details{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+}
+.live-match-info button{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border: none;
+    width: 172px;
+    height: 44px;
+}
+.live-match-info button a{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+.live-match-info button a span{
+    margin-right: 8px;
+}
+.live-match-info, .live-match-thumbnail{
+    width: 50%;
+}
+.live-match-info .live-match-title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.live-match .live-match-thumbnail img{
+       width: 567px;
+       height: 427px;
+       margin-top: 165px;
+       margin-right: 156px;
+       padding-left: 33px;
+   }
