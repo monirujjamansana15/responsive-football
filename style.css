@@ -46,17 +46,18 @@ body{
     text-decoration: none;
     margin-right: 36px;
 }
-.nav-icon button{
+.nav-icon .login-button{
     background-color: #E02C6D;
     border: none;
-    width: 123px;
-    height: 44px; 
-}
-.nav-icon button a{
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    margin: 10px 24px;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    margin-top: 42px;
+}
+.nav-icon .login-button span{
+    margin-left: 8px;
 }
 .header-section{
     display: flex;
@@ -68,37 +69,37 @@ body{
     margin-left: 156px;
     margin-top: 78px;
 }
-.header-image{
-    margin: 53px 148px 100px 0;
-}
 .header-section .header-details h1{
     color: #FFFFFF;
     font-size: 64px;
     font-weight: 700;
 }
-.header-details button{
+.header-details .link-button{
     width: 168px;
     height: 44px;
     background-color: #E02C6D;
     border: none;
-    padding: 10px 24px 10px 24px;
-}
-.header-details button a{
+    padding: 10px 24px;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     text-align: center;
-    
+    margin-bottom: 169px;
+    margin-top: 27px;
 }
-.header-details button a span{
+.header-details .link-button span{
     margin-right: 8px;
 }
  .header-section .header-image img{
      width: 556.01px;
      height: 438px;
+     margin: 68px 111px 100px 0;
  }
-
+.head-container:hover .header-image img{
+    transform: scale(1.2) rotate(30deg);
+    transition: transform 4s;
+}
 
  /* ------------------------
          MAIN-STYLES
@@ -168,21 +169,19 @@ main{
     color: #6C6C6C;
     font-weight: 400;
 }
-.live-match-info button{
+.live-match-info .live-button{
     padding: 10px 24px;
     background-color: #E02C6D;
     border: none;
     width: 172px;
     height: 44px;
-}
-.live-match-info button a{
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     text-align: center;
 }
-.live-match-info button a span{
+.live-match-info .live-button span{
     margin-right: 8px;
 }
 .live-match-info{
@@ -320,134 +319,180 @@ footer .copyright{
         NAV AND HEADER SECTION 
         ------------------------ */
 
-    .head-container{
-        background-color: #2D25A0;
-        width: 100%;
-        height: 977px;
-    }
-    .nav-bar{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: columns;
-    }
-    .header-section .header-details h1{
-        color: #FFFFFF;
-        font-size: 28px;
-        font-weight: 700;
-    }
-    
-    .header-section{
-        display: flex;
-        flex-direction: column;
-    }
-    .header-section .header-image img{
-        width: 100%;
-    }
-   
-    .header-details, .header-image{
-        width: 100%;
-    }
+.head-container{
+    background-color: #2D25A0;
+    width: 100%;
+    height: 1140px;
+}
+    nav-bar{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+.nav-title{
+display: flex;
+flex-direction: column;
+}
+.header-section{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+.header-details, .header-image{
+   width: 100%;
+}
+.header-section .header-details h1{
+   color: #FFFFFF;
+   font-size: 24px;
+   font-weight: 700;
+}
 
+.head-container:hover .header-image img{
+   transform: scale(1.2) rotate(30deg);
+   transition: transform 4s;
+}
+       
     /* ------------------
           MAIN-SECTION 
         -----------------*/
 
-    main{
-        margin-left: 40px;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 40px;
+}
+         
         
-    }  
-    .container{
-        width: 100%;
-        margin-top: 40px;
-     }
-     
-    .players{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* align-items: center; */
-    }  
     
     /* ------------------------
      LOWER-MIDDLE-SECTION
          ------------------------ */
+     
+         
+.live-match{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-     .live-match{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -40px;
-        flex-direction: column;
-    }
-    .live-match-info{
-        margin-top: 44px;
-        margin-left: 14px;
-        padding-right: 33px;
-        }
-    .live-match-info .live-match-details{
-        font-size: 16px;
-        color: #6C6C6C;
-        font-weight: 400;
-    }
-    .live-match-info button{
-        padding: 10px 24px;
-        background-color: #E02C6D;
-        border: none;
-        width: 172px;
-        height: 44px;
-    }
-    .live-match-info button a{
-        color: #FFFFFF;
-        font-size: 16px;
-        font-weight: 500;
-        text-decoration: none;
-        text-align: center;
-    }
-    .live-match-info{
-        width: 100%;
-    }
-    .live-match-thumbnail{
-        width: 100%;
-    }
-    .live-match-info .live-match-title{
-        font-weight: 700;
-        color: #0A0826;
-        font-size: 28px;
-    }
-        
-    .live-match .live-match-thumbnail img{
-        width: 100%;
-        margin-top: 20px;
-        margin-left: -55px;
-    }
+.live-match-info .live-match-details{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+}
+.live-match-info button{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border: none;
+    width: 172px;
+    height: 44px;
+}
+.live-match-info button a{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+.live-match-info button a span{
+    margin-right: 8px;
+}
+.live-match-info{
+    width: 70%;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.live-match-thumbnail{
+    width: 100%;
+}
+.live-match-info .live-match-title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.live-match .live-match-thumbnail img{
+       width: 328px;
+       height: 248px;
+       margin-left: 60px;
+   }
+
 
     /* ---------------------
      SPONSORED-SECTION
          ------------------- */
 
-    hr{
-        margin-top: 80px;
-        width: 100%;
-        border: 1px solid #D1D1D1;
-                
-    }
-    .sponsored .sponsored-title{
-        font-size: 30px;
-        color: #0A0826;
-        font-weight: 600;
-        text-align: center;
-    }
-    .sponsored-brand{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .sponsored-brand a img{
-        height: 94px;
-        width: 140px;
-        margin-left: 25px;
-    }
+hr{
+    margin-top: 80px;
+    width: 100%;
+    border: 1px solid #D1D1D1;
+}
+.sponsored .sponsored-title{
+    font-size: 30px;
+    color: #0A0826;
+    font-weight: 600;
+    text-align: center;
+}
+.sponsored-brand{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 60px;
+}
+        
+        
+    
          
     /* ---------------
          FIFA WORLD
          -------------- */
+      
+.football-world-container{
+    background-color: #2D25A0;
+    width: 100%;
+    height: 1280px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.football-world{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    margin-left: 60px;
+    
+}
+/* ----------------------
+        SOCIAL-ICONS
+    --------------------- */
 
+.footer-section img{
+    width: 80%;
+    margin-left: 20px;
+}
+.social-links{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.social-links a{
+    margin-right: 14px;
+    font-size: 20px;
+    color: #969BAB;
+    font-weight: 700;
+}
+       
 }
