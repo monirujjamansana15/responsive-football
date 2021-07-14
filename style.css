@@ -313,6 +313,11 @@ footer .copyright{
 /* ---------------------
        MEDIA-QUERIES
      ------------------- */
+
+    /* ------------------
+           FOR-MObILES
+        ------------------- */
+
 @media only screen and (max-width: 688px){
 
     /* --------------------------
@@ -324,7 +329,7 @@ footer .copyright{
     width: 100%;
     height: 1140px;
 }
-    nav-bar{
+.nav-bar{
    display: flex;
    justify-content: space-between;
    flex-direction: column;
@@ -351,7 +356,7 @@ flex-direction: column;
 }
 
 .head-container:hover .header-image img{
-   transform: scale(1.2) rotate(30deg);
+   transform: scale(1.1) rotate(30deg);
    transition: transform 4s;
 }
        
@@ -496,4 +501,192 @@ hr{
     font-weight: 700;
 }
        
+}
+
+
+/* -----------------------
+          FOR-TABLET
+------------------------------ */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    
+ /* --------------------------
+        NAV AND HEADER SECTION 
+        ------------------------ */
+
+
+
+.head-container{
+    background-color: #2D25A0;
+    width: 100%;
+    height: 950px;
+}
+.nav-bar{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+
+.header-section{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   overflow: hidden;
+}
+.header-details, .header-image{
+   width: 100%;
+}
+.header-section .header-details h1{
+   color: #FFFFFF;
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.head-container:hover .header-image img{
+   transform: scale(1.1) rotate(30deg);
+   transition: transform 4s;
+}
+       
+    /* ------------------
+          MAIN-SECTION 
+        -----------------*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 40px;
+    overflow: hidden;
+}
+         
+        
+    
+    /* ------------------------
+     LOWER-MIDDLE-SECTION
+         ------------------------ */
+     
+         
+.live-match{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.live-match-info .live-match-details{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+}
+.live-match-info button{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border: none;
+    width: 172px;
+    height: 44px;
+}
+.live-match-info button a{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+.live-match-info button a span{
+    margin-right: 8px;
+}
+.live-match-info{
+    width: 70%;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.live-match-thumbnail{
+    width: 100%;
+}
+.live-match-info .live-match-title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+}
+        
+.live-match .live-match-thumbnail img{
+       width: 328px;
+       height: 248px;
+       margin-left: 60px;
+   }
+
+
+    /* ---------------------
+     SPONSORED-SECTION
+         ------------------- */
+
+hr{
+    margin-top: 80px;
+    width: 100%;
+    border: 1px solid #D1D1D1;
+}
+.sponsored .sponsored-title{
+    font-size: 30px;
+    color: #0A0826;
+    font-weight: 600;
+    text-align: center;
+}
+.sponsored-brand{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 60px;
+}
+         
+    /* ---------------
+         FIFA WORLD
+         -------------- */
+      
+.football-world-container{
+    background-color: #2D25A0;
+    width: 100%;
+    height: 980px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.football-world{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-left: 60px;
+    
+}
+/* ----------------------
+        SOCIAL-ICONS
+    --------------------- */
+
+.footer-section img{
+    width: 80%;
+    margin-left: 20px;
+}
+.social-links{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.social-links a{
+    margin-right: 14px;
+    font-size: 20px;
+    color: #969BAB;
+    font-weight: 700;
+}
+
 }
