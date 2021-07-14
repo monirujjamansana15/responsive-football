@@ -97,7 +97,7 @@ body{
      margin: 68px 111px 100px 0;
  }
 .head-container:hover .header-image img{
-    transform: scale(1.2) rotate(30deg);
+    transform: scale(1.1) rotate(30deg);
     transition: transform 4s;
 }
 
