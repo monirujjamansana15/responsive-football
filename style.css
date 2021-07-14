@@ -328,6 +328,7 @@ footer .copyright{
    display: flex;
    justify-content: space-between;
    flex-direction: column;
+   overflow: hidden;
 }
 .nav-title{
 display: flex;
@@ -338,6 +339,7 @@ flex-direction: column;
    justify-content: center;
    flex-direction: column;
    align-items: center;
+   overflow: hidden;
 }
 .header-details, .header-image{
    width: 100%;
@@ -362,6 +364,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 .container{
     width: 100%;
@@ -370,6 +373,7 @@ main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-left: 40px;
+    overflow: hidden;
 }
          
         
@@ -452,9 +456,6 @@ hr{
     grid-template-columns: repeat(1, 1fr);
     margin-left: 60px;
 }
-        
-        
-    
          
     /* ---------------
          FIFA WORLD
